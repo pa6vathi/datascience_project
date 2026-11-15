@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A detective game that teaches real machine learning: clean data, find the real culprits, train a model and defend it in court.">
+<title>The Grade Detective – Case #395</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🕵️%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<section id="title" aria-label="Title screen">
+  <div class="tbox">
+    <div class="av" aria-hidden="true">🕵️</div>
+    <h1>THE GRADE DETECTIVE</h1>
+    <p class="case">Case file #395 · Solve it with real machine learning</p>
+    <p id="bestline"></p>
+    <div class="menu">
+      <button id="start">Open the case file</button>
+      <button id="howbtn" class="n" aria-expanded="false" aria-controls="how">How to play</button>
+      <button id="mute" class="n" aria-pressed="false">Sound: on</button>
+    </div>
+    <div id="how" class="how" hidden>
+      <b>Five chapters, one case:</b>
+      <ol>
+        <li>Crime Scene – inspect the data, then decide how to clean it.</li>
+        <li>Line-up – interrogate features and accuse the three that move the grade.</li>
+        <li>Ghost Students – test theories to explain the grade-0 students.</li>
+        <li>Profiler – train a model. Energy is limited, so experiment wisely.</li>
+        <li>Courtroom – the model faces sealed test students. One shot.</li>
+      </ol>
+      Wrong accusations cost a heart. Lose all three and the case is lost.
+    </div>
+  </div>
+</section>
+<header><h1>THE GRADE DETECTIVE</h1><p>Case file #395</p><div class="hud" id="hud"></div></header>
+<nav id="nav" aria-label="Chapters"></nav>
+<main id="app" tabindex="-1"></main>
+<footer>Data: 395 secondary-school maths students (UCI Student Performance). Educational game – never use a model like this to judge an individual student.</footer>
+<script src="js/data.js"></script>
+<script src="js/ml.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/game.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
